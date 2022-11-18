@@ -17,3 +17,4 @@ else
 {
     Console.WriteLine($"Наибольшая цифра числа --> {secondDigit}");
 }
+/*TEST*/
