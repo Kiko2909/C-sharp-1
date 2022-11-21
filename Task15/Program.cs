@@ -4,6 +4,7 @@ Console.Clear();
 
 Console.WriteLine("Введите число, чтобы узнать его третью цифру: ");
 int a = Convert.ToInt32(Console.ReadLine());
+if (a < 0) a = a * -1;
 
 bool Counter (int num)
 {
