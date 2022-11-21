@@ -13,6 +13,5 @@ void Table (int n)
         Console.WriteLine($"{x} --> {x*x}"); 
         x+=1;
     }
-    return 0;
 }
 Table(num);
