@@ -9,13 +9,13 @@ while (a < 1 || a > 7)
 
     if (a < 0 || a < 8)
         {
-            bool Day (int weekend)
-                {
-                  return weekend == 6 || weekend == 7;
-                }
-                    bool week = Day(a);
-                    Console.WriteLine(week == true ? $"{a} --> да" : $"{a} --> нет");
+            bool week = Day(a);
+            Console.WriteLine(week == true ? $"{a} --> да" : $"{a} --> нет");
         }
         
     else Console.WriteLine("Такого дня недели не существует.");
 }
+bool Day (int weekend)
+    {
+        return weekend == 6 || weekend == 7;
+    }
