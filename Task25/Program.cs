@@ -14,7 +14,7 @@ int Count(int number)
         number = number / 10;
         length = length + 1;
     }
-    return length;
+    return length == 0 ? 1 : length;
 }
 int result = Count (a);
 Console.WriteLine($"{result}");
