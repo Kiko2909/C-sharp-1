@@ -3,8 +3,8 @@
 Console.Clear();
 
 Console.WriteLine("Введите число A: ");
-double a = Convert.ToInt32(Console.ReadLine());
-double b = 0;
+int a = Convert.ToInt32(Console.ReadLine());
+int b = 0;
 
 while(b < 1)
 {
@@ -13,13 +13,13 @@ while(b < 1)
     if (b < 1) Console.WriteLine("Нужно ввести Натуральное число. ");
 }
 
-double Degree (double digit, double level)
+int Degree (int digit, int level)
 {
-   // int deg = 1;
-   // for (int i = 1; i <= level; i++) deg = deg * digit;
-    double deg = Math.Pow(digit, level);
+    int deg = 1;
+    for (int i = 1; i <= level; i++) deg = deg * digit;
+    //double deg = Math.Pow(digit, level);   Но везде должен быть тип double
     return deg;
 }
 
-double result = Degree(a, b);
+int result = Degree(a, b);
 Console.WriteLine($"{a} в степени {b} --> {result}");
