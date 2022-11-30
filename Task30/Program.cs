@@ -8,18 +8,18 @@ int [] array = new int[8];
 void FillArray(int[] collection)
 {
     Random rnd = new Random();
-    for (int i= 0; i < array.Length; i++)
+    for (int i= 0; i < collection.Length; i++)
     {
-        array[i] = rnd.Next(0,100);
+        collection[i] = rnd.Next(0,100);
     }
 }
 
 void PrintArray(int[] col)
 {
-    for(int i = 0; i < array.Length; i++)
+    for(int i = 0; i < col.Length; i++)
     {
-        Console.Write($"{array[i]}");
-        if (i < array.Length - 1) Console.Write(", ");
+        Console.Write($"{col[i]}");
+        if (i < col.Length - 1) Console.Write(", ");
     }
 }
 
