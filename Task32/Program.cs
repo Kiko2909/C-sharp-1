@@ -27,17 +27,13 @@ void PrintArray(int[] arr)
 
 void TurnTo (int[] arr)
 {
-    Console.Write("[");
     for(int i = 0; i < arr.Length; i++)
     {
         arr[i] = arr[i] * -1;
-        Console.Write($"{arr[i]}");
-        if (i < arr.Length - 1) Console.Write(", ");
     }
-    Console.WriteLine("]");
 }
 
 int[] array = CreateArrayRndInt(5, -9, 9);
 PrintArray(array);
 TurnTo(array);
-
+PrintArray(array);
