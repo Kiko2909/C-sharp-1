@@ -21,13 +21,14 @@ int Sum(int num)
 {
     int size = Count(num);
     int mun = 0;
-    double Sum = 0;
+    int sum = 0;
     for (int i = 1; i <= size; i++)
     {
         mun = num % 10;
         num = num / 10;
-        Sum = Sum + mun;
+        sum = sum + mun;
     }
+    return sum;
 }
 int res = Sum (number);
 Console.WriteLine($"Сумма цифр числа равна --> {res}");
