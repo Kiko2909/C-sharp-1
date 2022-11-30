@@ -17,7 +17,6 @@ int Degree (int digit, int level)
 {
     int deg = 1;
     for (int i = 1; i <= level; i++) deg = deg * digit;
-    //double deg = Math.Pow(digit, level);   Но везде должен быть тип double
     return deg;
 }
 
